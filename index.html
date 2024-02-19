@@ -25,10 +25,10 @@
       <div class="container-fluid">
         <a class="navbar-brand">
           <img
-            src="https://lh5.googleusercontent.com/IGWRWQGGU05KYVt9H7dfYjRvKeZVbrVeUhQBoCeXt4q3Y8QbxShD0tJpIys_tDCIohHQsbeVTU7t7-NOKE9z-Rs=w16383"
+            src="https://gentechsupport.com/wp-content/uploads/2022/06/GenTech-LOGO-Transparent.png"
             alt="GenTech"
             width="225"
-            height="70"
+            height="40"
           />
         </a>
         <button
@@ -75,24 +75,23 @@
         </div>
       </div>
     </nav>
-    <div class="mainHead">
-        GenTech Instructor Portal
-    </div>
-    <div class="container text-center">
-        <div class="row align-items-start" id="mainRow">
-          <div class="col col-3">
-            <button type="button" class="btn homeLink">Cirriculum</button>
-            <button type="button" class="btn homeLink">Deputy</button>
-            <button type="button" class="btn homeLink">Slack</button>
-
-          </div>
-          <div class="col">
-            <p class="homeText">All about class instruction.</p>
-            <p class="homeText">Your work schedule. Check it often.</p>
-            <p class="homeText">GenTech communications.  Check it often for announcements.</p>
-          </div>
+    <div class="mainHead">GenTech Instructor Portal</div>
+    <div class="container text-center" id="mainCont">
+      <div class="row align-items-start" id="mainRow">
+        <div class="col col-3">
+          <button type="button" class="btn homeLink">Cirriculum</button>
+          <button type="button" class="btn homeLink">Deputy</button>
+          <button type="button" class="btn homeLink">Slack</button>
+        </div>
+        <div class="col">
+          <p class="homeText">All about class instruction.</p>
+          <p class="homeText">Your work schedule. Check it often.</p>
+          <p class="homeText">
+            GenTech communications. Check it often for announcements.
+          </p>
         </div>
       </div>
+    </div>
   </body>
 </html>
 
@@ -104,12 +103,18 @@
     background-color: white !important;
   }
   #mainRow {
-    width: 10rem
+    width: 100%;
+  }
+  #mainCont {
+    box-sizing: unset;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .mainHead {
     text-align: center;
     font-size: 3.5rem;
-    color: rgba(22,136,185,1);
+    color: rgba(22, 136, 185, 1);
     font-weight: 700;
     margin-bottom: 3rem;
   }
@@ -117,29 +122,28 @@
     border-color: black;
     height: 3rem;
     width: 100%;
-    background-color: rgba(22,136,185,1);
+    background-color: rgba(22, 136, 185, 1);
     font-size: 1rem;
     font-weight: 700 !important;
     margin-bottom: 1rem;
-
   }
   .homeLink:hover {
     border-color: black;
-    background-color: rgba(22,136,185,1);
+    background-color: rgba(22, 136, 185, 1);
     color: white;
   }
   .homeLink:active {
-    background-color: rgba(22,136,185,1) !important;
+    background-color: rgba(22, 136, 185, 1) !important;
     color: black;
   }
   .homeLink:focus-visible {
-    background-color: rgba(22,136,185,1);
+    background-color: rgba(22, 136, 185, 1);
     color: black;
   }
   .homeText {
     height: 3rem;
-    font-size: 2rem;
-    color: rgba(22,136,185,1) !important;
+    font-size: 1.8rem;
+    color: rgba(22, 136, 185, 1) !important;
     text-align: left;
     font-weight: 500;
   }
