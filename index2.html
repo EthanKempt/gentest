@@ -63,7 +63,7 @@
         <p class="nav-link" onclick="changeScreen('S')" id="linkS">Sub Notes</p>
       </li>
     </ul>
-    <div class="container" id="contentArea">
+    <div class="container contentArea" id="contentAreaC">
       <div class="card cirriculumTitle">
         <div class="card-body">YOUR CURRENT CIRRICULUMS</div>
       </div>
@@ -131,7 +131,7 @@
               <div class="card-body">
                 <h5 class="card-title">Modeling to the Max</h5>
                 <p class="card-text">
-                  Intro to 3D/CAD, Geometry, Puzzles and Games 
+                  Intro to 3D/CAD, Geometry, Puzzles and Games
                 </p>
                 <a href="#" class="btn btn-primary">View Cirriculum</a>
               </div>
@@ -186,6 +186,33 @@
         </div>
       </div>
     </div>
+    <div class="container contentArea" id="contentAreaT">
+      <div class="list-group" id="tasksGroup">
+        <a href="https://www.jotform.com/" target=”_blank” class="list-group-item list-group-item-action" aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Jotform</h5>
+            <small>3 days ago</small>
+          </div>
+          <p class="mb-1">Complete the Jotform for 8 sphero indis.</p>
+        </a>
+        <a href="https://www.google.com/docs/about/" target=”_blank” class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Attendance</h5>
+            <small class="text-body-secondary">3 days ago</small>
+          </div>
+          <p class="mb-1">Fill out attendance for 3rd Quarter at Brisas.</p>
+        </a>
+        <a href="http://gentechsupport.com/portal/" target=”_blank” class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Post-Test</h5>
+            <small class="text-body-secondary">3 days ago</small>
+          </div>
+          <p class="mb-1">Have all students complete the post test for their cirriculum.</p>
+        </a>
+      </div>
+    </div>
+    <div class="container contentArea" id="contentAreaQ"></div>
+    <div class="container contentArea" id="contentAreaS"></div>
   </body>
 </html>
 
@@ -194,6 +221,12 @@
     let newPage = "link" + endLetter;
     document.getElementsByClassName("active")[0].classList.remove("active");
     document.getElementById(newPage).classList.add("active");
+    let areas = document.getElementsByClassName('contentArea');
+    for (let i = 0; i < areas.length; i++) {
+      areas[i].style.display = 'none'
+    }
+    let newArea = 'contentArea' + endLetter;
+    document.getElementById(newArea).style.display = 'block'
   }
 </script>
 
@@ -229,5 +262,20 @@
   }
   .card {
     margin-top: 1rem;
+  }
+  #contentAreaC {
+    display: none;
+  }
+  #contentAreaT {
+    display: block;
+  }
+  #contentAreaQ {
+    display: none;
+  }
+  #contentAreaS {
+    display: none;
+  }
+  #tasksGroup {
+    margin-top: 2rem;
   }
 </style>
